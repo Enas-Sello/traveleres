@@ -1,0 +1,76 @@
+@import '../../global.scss';
+
+.Slide {
+  background-color: $background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 700px;
+        height: 100%;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        .left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 4;
+          height: 80%;
+          .leftContaner {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .img {
+              width: 40px;
+              height: 40px;
+              background-color: $background;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .icon {
+                width: 25px;
+                //   height: 25px;
+              }
+            }
+            h2 {
+              font-size: 40px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+        .right {
+          flex: 8;
+          height: 100%;
+          background-color: rgb(15, 46, 46);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          img{
+            width: 400px;
+            transform: rotate(-10deg)
+            ;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import Contact from './Components/Contact/Contact';
 import Intro from './Components/intro/Intro';
-import { Projects } from './Components/Projects/Projects';
+import { Planes } from './Components/Planes/Planes';
 import Service from './Components/Service/Service';
 import Slide from './Components/Slide/Slide';
 import { Topbar } from './Components/Topbar/Topbar';
@@ -15,7 +15,7 @@ function App() {
       <Menu open={open} setOpen={setOpen} />
       <div className="section">
         <Intro />
-        <Projects />
+        <Planes />
         <Slide />
         <Service />
         <Contact />
